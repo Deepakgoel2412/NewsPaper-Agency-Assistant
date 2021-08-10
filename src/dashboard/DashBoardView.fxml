@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dash" minHeight="600.0" minWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashBoardViewController">
+   <children>
+      <Label layoutX="113.0" layoutY="14.0" text="NewsPaper Agency Assistant">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="14.0" layoutY="162.0" onMouseClicked="#callPaper" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@paper.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="192.0" layoutY="159.0" onMouseClicked="#callCustomer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customer.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="139.0" fitWidth="151.0" layoutX="354.0" layoutY="169.0" onMouseClicked="#callHawker" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawker1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="170.0" layoutX="531.0" layoutY="157.0" onMouseClicked="#callBillHistroy" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="322.0" text="Paper Master">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="322.0" prefHeight="27.0" prefWidth="77.0" text="Customer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="559.0" layoutY="322.0" text="Bill History">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="322.0" text="Hawker">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="106.0" fitWidth="127.0" layoutX="546.0" layoutY="365.0" onMouseClicked="#callCustomerDisplay" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customer%20display.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="140.0" layoutX="377.0" layoutY="366.0" onMouseClicked="#callHawkerDisplay" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hawker%20display.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="127.0" layoutX="17.0" layoutY="367.0" onMouseClicked="#callBillGenerator" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill%20generator.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="116.0" fitWidth="151.0" layoutX="198.0" layoutY="366.0" onMouseClicked="#callBillCollector" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Bill%20collector.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="496.0" text="Bill Generator">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="496.0" prefHeight="27.0" prefWidth="106.0" text="Bill Collector">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="496.0" prefHeight="27.0" prefWidth="151.0" text="Customer Display">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="496.0" text="Hawker Display">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="372.0" layoutX="328.0" layoutY="92.0" startX="-328.0" />
+   </children>
+</AnchorPane>
